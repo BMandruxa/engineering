@@ -1,0 +1,404 @@
+.header {
+   background: #344757;
+   width: 100%;
+   position: fixed;
+   z-index: 50;
+   height: 115px;
+   transition: all 0.4s ease 0s;
+
+   &_main {
+      background: #e8f2fa;
+   }
+
+   @media (max-width: 1000px) {
+      height: 90px;
+   }
+
+   &__container {}
+
+   &__body {
+      display: flex;
+      align-items: center;
+      padding-top: 34px;
+
+      @media (max-width: 1230px) {
+         justify-content: space-between;
+      }
+
+      @media (max-width: 999.98px) {
+         display: none;
+         opacity: 0;
+         z-index: -999;
+         visibility: hidden;
+         width: 0;
+         height: 0;
+         position: absolute;
+         left: -9999;
+         top: -9999;
+      }
+
+      &_main .header__title a {
+         color: #344757;
+      }
+
+      &_main .header__title a:hover {
+         color: #6995ba;
+      }
+
+      &_main .header__number a {
+         color: #344757;
+      }
+
+      &_main .header__number a:hover {
+         color: #6995ba;
+      }
+   }
+
+   &__icon {
+      // margin-right: 44.5px;
+      // @media (max-width: 1230px) {
+      //    margin-right: 10px;
+      // }
+   }
+
+   &__icn {
+      position: relative;
+      z-index: 10;
+
+      @media (max-width: 1045px) {
+         width: 180px;
+         height: 40px;
+      }
+
+      @media (max-width: 1020px) {
+         width: 160px;
+         height: 37px;
+      }
+   }
+
+   &__title {
+      margin-right: 41px;
+
+      @media (max-width: 1230px) {
+         margin-right: 20px;
+      }
+
+      &_1 {
+         margin-right: 0px;
+         padding-right: 41px;
+         padding-left: 44.5px;
+
+         @media (max-width: 1230px) {
+            margin-right: 0px;
+            padding-right: 20px;
+            padding-left: 10px;
+         }
+      }
+   }
+
+   &__title a {
+      font-size: 16px;
+      line-height: 1.62;
+      color: #ffffff;
+      transition: all 0.3s ease 0s;
+   }
+
+   &__title a:hover {
+      color: #6995ba;
+   }
+
+   &__number {
+      position: relative;
+      z-index: 10;
+   }
+
+   &__number a {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.16;
+      color: #ffffff;
+      transition: all 0.3s ease 0s;
+   }
+
+   &__span {
+      color: #ff6200;
+   }
+
+   &__menu-list {}
+}
+
+//========================================================выпадающее меню
+.menu {
+   position: absolute;
+   top: 58%;
+   left: 0;
+   width: 100%;
+   padding-top: 48px;
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transition: all 0.3s ease 0s;
+   transform: translate(0px, -5px);
+
+   &__body {
+      width: 100%;
+      background: #59768c;
+   }
+
+   &__content {
+      max-width: 1246px;
+      padding: 0px 15px;
+      margin: 0 auto;
+      display: flex;
+      max-height: 65px;
+
+      @media(max-width: 1220px) {
+         justify-content: center;
+      }
+   }
+
+   &__title {
+      padding: 25px 26px 27px 26px;
+      font-size: 16px;
+      line-height: 1.2;
+      cursor: pointer;
+      background: inherit;
+      transition: all 0.3s ease 0s;
+      color: #fff;
+
+      @media(max-width: 1220px) {
+         font-size: 14px;
+         line-height: 1.2;
+         padding: 15px 15px 15px 15px;
+      }
+   }
+
+   &__title:hover {
+      background: #344757;
+   }
+}
+
+//======================================================== появление выпадающего меню на пк и мобильных экранах
+body._pc .header__body .header__title:hover .menu {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: all;
+   transform: translate(0px, 0px);
+}
+
+body._touch .header__body .header__title._active .menu {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: all;
+   transform: translate(0px, 0px);
+}
+
+.mobile-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   padding: 32px 34px 23px 16px;
+
+   @media (min-width: 1000px) {
+      display: none;
+      opacity: 0;
+      z-index: -999;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -9999;
+      top: -9999;
+   }
+
+   &__icon {
+      width: 156px;
+      height: 35px;
+   }
+
+   &__icn {
+      display: block;
+      box-sizing: border-box;
+      width: 156px;
+      height: 35px;
+   }
+
+   &__right {
+      display: flex;
+      align-items: center;
+   }
+
+   &__number {
+      width: 45px;
+      height: 45px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+   }
+
+   &__number-icon {
+      width: 22px;
+      height: 22px;
+   }
+
+   &__burger {
+      z-index: 5;
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 19px;
+      cursor: pointer;
+      // text-align: right;
+   }
+
+   &__burger span {
+      left: 0;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+
+      background: #ff6200;
+      border-radius: 3px;
+   }
+
+   &__burger:before {
+      right: 0;
+      position: absolute;
+      height: 3px;
+      width: 20px;
+      transition: all 0.3s ease 0s;
+
+      content: "";
+      top: 0;
+
+      background: #ff6200;
+      border-radius: 3px;
+   }
+
+   &__burger:after {
+      right: 0;
+      position: absolute;
+      height: 3px;
+      width: 13px;
+      transition: all 0.3s ease 0s;
+
+      content: "";
+      bottom: 0;
+
+      background: #ff6200;
+      border-radius: 3px;
+   }
+
+   &__burger._active span {
+      transform: scale(0) translate(0px, -50%);
+   }
+
+   &__burger._active:before {
+      width: 25px;
+      top: 50%;
+      transform: rotate(-45deg) translate(0%, -65%);
+   }
+
+   &__burger._active:after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0%, 65%);
+      width: 25px;
+   }
+
+   // ======================================================== мобильное меню
+   &__container {
+      position: fixed;
+      right: 0%;
+      top: 90px;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
+      display: flex;
+      justify-content: flex-end;
+
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translate(375px, 0px);
+      transition: all 0.4s ease 0s;
+      overflow-y: auto;
+   }
+
+   &__container._active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transform: translate(0px, 0px);
+   }
+
+   &__body {
+      height: 670px;
+      width: 375px;
+      padding: 38px 17px 0px 17px;
+      background: #ffffff;
+   }
+
+   &__head {
+      display: flex;
+      font-size: 14px;
+      line-height: 1.86;
+      color: #344757;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #59768c;
+      margin-bottom: 20px;
+   }
+
+   &__title {}
+
+   &__title:not(:last-child) {
+      margin-right: 140px;
+   }
+
+   &__content {}
+
+   &__top {
+      display: flex;
+   }
+
+   &__links {
+      display: flex;
+      flex-direction: column;
+
+      &_1 {
+         margin-right: 76px;
+         margin-bottom: 59px;
+      }
+
+      &_3 {}
+   }
+
+   &__link {
+      font-size: 14px;
+      line-height: 2.14;
+      color: #344757;
+   }
+
+   &__bottom {}
+}
+
+// ========================================================изменение цвета хедера только на главной странице
+.header_main._active {
+   background: #fff;
+}
+
+// ========================================================наполнение для скролла контента в меню бургер
+.empty {
+   visibility: hidden;
+   pointer-events: none;
+   opacity: 0;
+}

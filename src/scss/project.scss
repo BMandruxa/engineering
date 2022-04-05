@@ -1,0 +1,221 @@
+.project {
+   background: #59768C;
+   padding: 98px 0px 98px 0px;
+   position: relative;
+
+   @media(max-width: 880px) {
+      padding: 17px 0px 17px 0px;
+   }
+
+   @media(max-width: 426px) {
+      padding: 17px 0px 315px 0px;
+   }
+
+   &__container {
+      max-width: 1246px;
+      padding: 0 15px;
+      margin: 0 auto;
+
+      @media(max-width:370px) {
+         padding: 0 5px;
+      }
+   }
+
+   &__image {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+
+      @media(max-width: 1460px) {
+         transform: translate(-10%, 0%);
+      }
+
+      @media(max-width: 1230px) {
+         transform: translate(-15%, 0%);
+      }
+
+      @media(max-width: 1180px) {
+         transform: translate(-20%, 0%);
+      }
+
+      @media(max-width: 1100px) {
+         display: none;
+      }
+
+      @media(max-width: 880px) {
+         display: block;
+         // bottom: 0%;
+         // left: 50%;
+         // transform: translate(-50%, 0%);
+         // width: 375px;
+         // height: 315px;
+      }
+
+      @media(max-width: 426px) {
+         width: 100%;
+         bottom: 0%;
+         left: 0%;
+         transform: translate(0%, 0%);
+      }
+   }
+
+   &__img-1 {
+      @media(max-width: 880px) {
+         // display: block;
+         // width: 100%;
+         display: none;
+      }
+   }
+
+   &__img-2 {
+      width: 100%;
+      max-height: 317px;
+
+      @media(min-width: 426px) {
+         display: none;
+
+
+      }
+
+   }
+
+   &__body {
+      margin: 0 auto;
+      padding: 57px 0px 57px 0px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(30px);
+      border-radius: 7px;
+      width: 798px;
+
+      @media(max-width: 880px) {
+         max-width: 100%;
+         height: 518px;
+         padding: 26px 16px 0px 16px;
+      }
+
+      @media(max-width: 400px) {
+         min-width: 343px
+      }
+   }
+
+   &__title {
+      font-size: 36px;
+      line-height: 43px;
+      color: #344757;
+      text-align: center;
+
+      @media(max-width: 460px) {
+         font-size: 24px;
+      }
+   }
+
+   &__subtitle {
+      @extend %subtitle;
+      text-align: center;
+      margin-bottom: 62px;
+
+      @media(max-width: 880px) {
+         margin-bottom: 35px;
+      }
+
+      @media(max-width: 460px) {
+         font-size: 16px;
+      }
+   }
+
+   &__br {
+      @media(min-width: 460px) {
+         display: none;
+      }
+   }
+
+   &__points {
+      display: flex;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #59768C;
+      justify-content: center;
+      margin-bottom: 60px;
+      align-items: center;
+
+      @media(max-width: 880px) {
+         max-width: 240px;
+         flex-direction: column;
+         align-items: flex-start;
+         margin: 0px auto 46px auto;
+      }
+
+      @media(max-width: 460px) {
+         font-size: 16px;
+         // margin: 0px 0px 46px 0px;
+         // padding: 0 0 0 18px;
+      }
+   }
+
+   &__point {
+      display: flex;
+      align-items: center;
+   }
+
+   &__point:not(:last-child) {
+      margin-right: 15px;
+   }
+
+   &__point img {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+
+      @media(max-width: 460px) {
+         width: 10px;
+         height: 10px;
+      }
+   }
+
+   &__form {
+      display: flex;
+      justify-content: center;
+
+      // margin: 0 auto;
+      @media(max-width: 880px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__form input {
+      width: 311px;
+      height: 65px;
+      background: #E8F2FA;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #344757;
+      padding-left: 31px;
+      margin-right: 34px;
+
+      @media(max-width: 880px) {
+         margin-right: 0px;
+         margin-bottom: 13px;
+      }
+   }
+
+   &__button {
+      margin-bottom: 67px;
+
+      @media(max-width: 880px) {
+         margin-bottom: 21px;
+      }
+   }
+
+   &__foot {
+      font-size: 18px;
+      line-height: 1.2;
+      color: #59768C;
+      text-align: center;
+
+      @media(max-width: 460px) {
+         font-size: 16px;
+      }
+   }
+}

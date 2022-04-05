@@ -1,0 +1,127 @@
+.works {
+   margin-bottom: 130px;
+
+   @media(max-width: 1260px) {
+      margin-bottom: 100px;
+   }
+
+   @media(max-width: 460px) {
+      margin-bottom: 60px;
+   }
+
+   &__container {}
+
+   &__title {
+      padding-left: 104px;
+      @extend %titlepad;
+      margin: 0 auto 62px auto;
+      font-size: 44px;
+      line-height: 1.2;
+      color: #344757;
+
+      // @extend %titlealign;
+      @media (max-width: 1260px) {
+         text-align: center;
+      }
+
+      @media (max-width: 880px) {
+         font-size: 40px;
+         margin-bottom: 40px;
+      }
+
+      @media(max-width: 460px) {
+         font-size: 26px;
+      }
+   }
+
+   &__items {
+      margin: 0 -16px;
+      display: flex;
+      margin-bottom: 62px;
+      justify-content: center;
+
+      @media (max-width: 1250px) {
+         flex-wrap: wrap;
+         margin-bottom: 30px;
+      }
+   }
+
+   &__item {
+      padding: 0 16px;
+   }
+
+   &__item:not(:last-child) {
+      @media (max-width: 1250px) {
+         margin-bottom: 32px;
+      }
+   }
+}
+
+.item-works {
+
+   // width: 100%;
+   &__body {
+      width: 385px;
+      background: #e8f2fa;
+      border-radius: 7px;
+   }
+
+   &__image {
+      width: 100%;
+   }
+
+   &__image img {
+      display: block;
+      box-sizing: border-box;
+   }
+
+   &__content {
+      width: 100%;
+      padding: 35px 36px 35px 31px;
+   }
+
+   &__head {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #59768c;
+      margin-bottom: 18px;
+   }
+
+   &__description {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #59768c;
+      margin-bottom: 12px;
+   }
+
+   &__title {
+      font-size: 24px;
+      line-height: 29px;
+      color: #344757;
+      margin-bottom: 20px;
+   }
+
+   &__text {
+      font-size: 14px;
+      line-height: 24px;
+      color: #344757;
+      margin-bottom: 41px;
+   }
+
+   &__link {
+      text-align: center;
+   }
+
+   &__more {
+      text-decoration: underline;
+      font-size: 18px;
+      line-height: 21px;
+      color: #40b1ff;
+   }
+
+   &__more:hover {
+      text-decoration: none;
+   }
+}
