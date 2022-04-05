@@ -31,6 +31,7 @@ body {
 @import "tabs.scss";
 @import "question.scss";
 @import "designing.scss";
+@import "calculator.scss";
 
 %title {
 	font-size: 44px;
@@ -489,7 +490,7 @@ body {
 		display: grid;
 		grid-template-rows: 480px 480px 480px;
 		grid-template-columns: 384px 384px 384px;
-		grid-gap: 32px;
+		gap: 32px;
 
 		@media (max-width: 1250px) {
 			grid-template-rows: 480px 480px;

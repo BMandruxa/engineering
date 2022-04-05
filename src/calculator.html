@@ -25,21 +25,176 @@
          <div class="calculator">
             <div class="calculator__container _container">
                <div class="calculator__items">
-                  <div class="calculator__item">
+                  <div class="calculator__item calculator__item_1">
                      <div class="calculator__left">1</div>
                      <div class="calculator__right">
                         <div class="calculator__title">Выберите материал, из которого дом построен</div>
-                        <div class="calculator__checkboxes">
-                           <input type="radio" class="calculator__checkbox" value="1">Дерево
+                        <div class="calculator__check">
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="1" checked>Дерево
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="2">Кирпич
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="3">Монолит
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="4">Прочее
+                           </div>
                         </div>
-                        <div class="calculator__checkboxes">
-                           <input type="radio" class="calculator__checkbox" value="2">Кирпич
+                     </div>
+                  </div>
+                  <div class="calculator__item">
+                     <div class="calculator__left">2</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Выберите площадь дома</div>
+                        <div class="calculator__check calculator__check_2">
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="1">50-100 м<sup>2</sup>
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="2">100-150 м<sup>2</sup>
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="3">150-200 м<sup>2</sup>
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="4">150-200 м<sup>2</sup>
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="5"> 200-250 м<sup>2</sup>
+                           </div>
                         </div>
-                        <div class="calculator__checkboxes">
-                           <input type="radio" class="calculator__checkbox" value="3">Монолит
+                     </div>
+                  </div>
+                  <div class="calculator__item">
+                     <div class="calculator__left">3</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Выберите этажность дома</div>
+                        <div class="calculator__check calculator__check_3">
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="1">Один
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="2">Два
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="3">Три
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="4">Один + мансарда
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="5">Два + мансарда
+                           </div>
                         </div>
-                        <div class="calculator__checkboxes">
-                           <input type="radio" class="calculator__checkbox" value="4">Прочее
+                     </div>
+                  </div>
+                  <div class="calculator__item">
+                     <div class="calculator__left">4</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Выберите тип подключения отопления</div>
+                        <div class="calculator__check calculator__check_4">
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="1">Газ
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="2">Электрич.
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="3">Дизель
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="4">Твёрдое топл.
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="5">Прочее
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="6">Не нужно
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="calculator__item">
+                     <div class="calculator__left">5</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Выберите тип подключения водоснабжения</div>
+                        <div class="calculator__check calculator__check_5">
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="1">Магистраль
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="2">Колодец
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="3">Скважина
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="4">Не нужно
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="calculator__item">
+                     <div class="calculator__left">6</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Выберите тип подключения канализации</div>
+                        <div class="calculator__check calculator__check_6">
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="1">Магистраль
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="2">Септик
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="3">Не нужно
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="calculator__item">
+                     <div class="calculator__left">7</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Выберите площадь теплого пола</div>
+                        <div class="calculator__check calculator__check_7">
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="1">25 м2
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="2">50 м2
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="3">75 м2
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="4">100 м2
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="5">125 м2
+                           </div>
+                           <div class="calculator__checkboxes">
+                              <input type="radio" class="calculator__checkbox" value="6">Не нужен
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="calculator__item calculator__item_8">
+                     <div class="calculator__left">8</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Введите количество окон в доме</div>
+                        <div class="calculator__windows">
+                           <input class="calculator__window" type="number" placeholder="например 5" min="1" max="100">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="calculator__item calculator__item_9">
+                     <div class="calculator__left">9</div>
+                     <div class="calculator__right">
+                        <div class="calculator__title">Введите количество проживающих в доме</div>
+                        <div class="calculator__windows">
+                           <input class="calculator__window" type="number" placeholder="например 5" min="1" max="100">
                         </div>
                      </div>
                   </div>
