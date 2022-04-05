@@ -176,3 +176,23 @@
       color: #344757;
    }
 }
+
+// ===========================================
+.calculator-image {
+
+   &__container {
+      margin-bottom: 139px;
+
+      @media(max-width: 1260px) {
+         margin-bottom: 100px;
+      }
+
+      @media(max-width: 460px) {
+         padding-bottom: 60px;
+      }
+   }
+
+   &__container img {
+      max-width: 100%;
+   }
+}
