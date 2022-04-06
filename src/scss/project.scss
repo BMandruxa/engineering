@@ -1,7 +1,13 @@
 .project {
    background: #59768C;
-   padding: 98px 0px 98px 0px;
    position: relative;
+
+   &__cont {
+      max-width: 1600px;
+      padding: 98px 0px 98px 0px;
+
+      margin: 0 auto;
+   }
 
    @media(max-width: 880px) {
       padding: 17px 0px 17px 0px;

@@ -1,9 +1,31 @@
 .calculator {
    background: #E8F2FA;
+   padding-bottom: 60px;
 
    &__container {}
 
-   &__items {}
+   &__button {
+      background-color: #40B1FF;
+      margin-left: 104px;
+
+      @media(max-width: 715px) {
+         margin-left: 0px;
+         margin: 0 auto;
+      }
+   }
+
+   &__button:hover {
+      background-color: #C6D8E5;
+      color: #40B1FF;
+   }
+
+   &__items {
+      margin-bottom: 62px;
+
+      @media(max-width: 715px) {
+         margin-bottom: 32px;
+      }
+   }
 
    &__item {
       display: flex;
@@ -313,5 +335,326 @@
       @media(max-width: 500px) {
          width: 343px;
       }
+   }
+}
+
+// =======================================================download
+.download {
+   margin-bottom: 96px;
+
+   @media(max-width: 460px) {
+      margin-bottom: 60px;
+   }
+
+   &__container {}
+
+   &__body {
+      padding-left: 104px;
+
+      @media(max-width: 1150px) {
+         padding-left: 0px;
+      }
+
+   }
+
+   &__title {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 35px;
+
+      @media(max-width: 780px) {
+         text-align: center;
+      }
+
+      @media(max-width: 600px) {
+         font-size: 34px;
+      }
+
+      @media(max-width: 500px) {
+         text-align: left;
+         margin-bottom: 20px;
+         font-size: 26px;
+      }
+
+      @media(max-width: 410px) {
+         font-size: 24px;
+      }
+
+   }
+
+   &__title span {
+      color: #FF6200;
+   }
+
+   &__items {
+      margin-bottom: 75px;
+      display: flex;
+      font-size: 24px;
+      line-height: 2;
+      color: #59768C;
+
+      @media(max-width: 1050px) {
+         flex-direction: column;
+         margin-bottom: 45px;
+      }
+
+      @media(max-width: 600px) {
+         font-size: 18px;
+      }
+
+      @media(max-width: 410px) {
+         font-size: 16px;
+      }
+
+   }
+
+   &__left {
+      margin-right: 110px;
+
+      @media(max-width: 1050px) {
+         margin-right: 0px;
+      }
+
+   }
+
+   &__right {}
+
+   &__item {
+      display: flex;
+      align-items: center;
+   }
+
+   &__item br {
+      @media(min-width: 410px) {
+         display: none;
+      }
+   }
+
+   &__item img {
+      margin-right: 40px;
+
+      @media(max-width: 430px) {
+         margin-right: 20px;
+      }
+   }
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+
+      @media(max-width: 780px) {
+         flex-direction: column;
+         max-width: 384px;
+      }
+   }
+
+   &__button {
+      margin-right: 30px;
+
+      @media(max-width: 780px) {
+         margin-right: 0px;
+         margin-bottom: 20px;
+      }
+   }
+
+   &__link {
+      font-size: 18px;
+      line-height: 1.44;
+      color: #344757;
+
+   }
+
+   &__link span {
+      color: #FF6200;
+
+   }
+
+   &__link span:hover {
+      text-decoration: underline;
+   }
+}
+
+// =======================================================calculator-comfort
+.calculator-comfort {
+   margin-bottom: 114px;
+
+   @media(max-width: 1260px) {
+      margin-bottom: 100px;
+   }
+
+   @media(max-width: 460px) {
+      margin-bottom: 60px;
+   }
+
+   &__container {
+      background: #59768C;
+      position: relative;
+   }
+
+   &__men {
+      position: absolute;
+      right: -1%;
+      top: -9px;
+      z-index: 1;
+
+      @media(max-width: 1530px) {
+         right: -10%;
+      }
+
+      @media(max-width: 1360px) {
+         right: -19%;
+      }
+
+      @media(max-width: 1260px) {
+         display: none;
+      }
+   }
+
+   &__body {
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 59px 612px 201px 194px;
+
+      @media(max-width: 1260px) {
+         padding: 59px 0 59px 0;
+      }
+
+      @media(max-width: 620px) {
+         padding: 31px 0 44px 0;
+      }
+   }
+
+   &__content {
+      background: #FFFFFF;
+      border: 1px solid #E8F2FA;
+      border-radius: 7px;
+      width: 801px;
+      height: 407px;
+      padding: 43px 104px 0px 103px;
+
+      @media(max-width: 1260px) {
+         margin: 0 auto;
+      }
+
+      @media(max-width: 840px) {
+         padding: 43px 50px 0px 50px;
+         width: 593px;
+      }
+
+      @media(max-width: 620px) {
+         padding: 30px 30px 0px 30px;
+         width: 343px;
+         height: 415px;
+      }
+   }
+
+   &__top {
+      padding-bottom: 34px;
+      border-bottom: 1px solid #59768C;
+      margin-bottom: 34px;
+
+      @media(max-width: 620px) {
+         padding-bottom: 16px;
+         margin-bottom: 31px;
+      }
+   }
+
+   &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media(max-width: 620px) {
+         margin-bottom: 16px;
+      }
+   }
+
+   &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+      color: #FF6200;
+      margin-bottom: 11px;
+
+      @media(max-width: 620px) {
+         margin-bottom: 0px;
+      }
+   }
+
+   &__image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: rgba(255, 98, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__br-1 {
+      @media(max-width: 620px) {
+         display: none;
+      }
+   }
+
+   &__br-2 {
+      @media(min-width: 621px) {
+         display: none;
+      }
+   }
+
+   &__subtitle {
+      font-size: 18px;
+      line-height: 1.16;
+      color: #59768C;
+      margin-bottom: 35px;
+
+      @media(max-width: 620px) {
+         font-size: 14px;
+      }
+   }
+
+   &__text {
+      font-size: 44px;
+      line-height: 1.2;
+      color: #344757;
+
+      @media(max-width: 620px) {
+         font-size: 24px;
+      }
+   }
+
+   &__bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 32px;
+
+      @media(max-width: 620px) {
+         grid-template-columns: 1fr 1fr;
+         column-gap: 18px;
+         row-gap: 24px;
+      }
+   }
+
+   &__item {}
+}
+
+.item-calc {
+   color: #344757;
+
+   &__title {
+      font-size: 18px;
+      line-height: 21px;
+   }
+
+   &__price {
+      font-weight: 700;
+      font-size: 24px;
+   }
+
+   &_3 {
+      color: #FF6200;
    }
 }

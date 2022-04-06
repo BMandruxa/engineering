@@ -19,19 +19,6 @@ body {
 	margin: 0 auto;
 }
 
-@import "null.scss";
-@import "header.scss";
-@import "trust.scss";
-@import "staff.scss";
-@import "works.scss";
-@import "montage.scss";
-@import "project.scss";
-@import "footer.scss";
-@import "service.scss";
-@import "tabs.scss";
-@import "question.scss";
-@import "designing.scss";
-@import "calculator.scss";
 
 %title {
 	font-size: 44px;
@@ -97,6 +84,8 @@ body {
 // 	left: -9999;
 // 	top: -9999;
 // }
+
+
 // ========================================= шаблоны кнопок
 .btn-1 {
 	width: 174px;
@@ -179,6 +168,20 @@ body {
 .btn-4 img {
 	margin-right: 11px;
 }
+
+@import "null.scss";
+@import "header.scss";
+@import "trust.scss";
+@import "staff.scss";
+@import "works.scss";
+@import "montage.scss";
+@import "project.scss";
+@import "footer.scss";
+@import "service.scss";
+@import "tabs.scss";
+@import "question.scss";
+@import "designing.scss";
+@import "calculator.scss";
 
 // ==============================================================complete-solution
 .complete-solution {
