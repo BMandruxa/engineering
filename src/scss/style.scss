@@ -19,73 +19,6 @@ body {
 	margin: 0 auto;
 }
 
-
-%title {
-	font-size: 44px;
-	line-height: 1.2;
-	color: #344757;
-	margin-bottom: 14px;
-
-	@media (max-width: 880px) {
-		font-size: 40px;
-	}
-
-	@media(max-width: 460px) {
-		font-size: 26px;
-	}
-}
-
-// @extend %title ;
-%subtitle {
-	font-size: 24px;
-	line-height: 1.2;
-	color: #59768c;
-
-	@media(max-width: 460px) {
-		font-size: 16px;
-	}
-}
-
-// @extend %subtitle ;
-%titlepad {
-	@media (max-width: 1250px) {
-		padding-left: 0px;
-		max-width: 1008px;
-	}
-}
-
-// @extend %titlealign;
-%titlealign {
-	@media (max-width: 1050px) {
-		text-align: center;
-	}
-
-	@media (max-width: 450px) {
-		text-align: left;
-	}
-}
-
-// @extend %titlepad;
-%container {
-	max-width: 1040px;
-	margin: 0 auto;
-}
-
-// @extend %container;
-
-// %none {
-// 	display: none;
-// 	opacity: 0;
-// 	z-index: -999;
-// 	visibility: hidden;
-// 	width: 0;
-// 	height: 0;
-// 	position: absolute;
-// 	left: -9999;
-// 	top: -9999;
-// }
-
-
 // ========================================= шаблоны кнопок
 .btn-1 {
 	width: 174px;
@@ -169,6 +102,26 @@ body {
 	margin-right: 11px;
 }
 
+.btn-5 {
+	width: 177px;
+	height: 50px;
+	background: #40B1FF;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.btn-5 img {
+	margin-right: 8px;
+}
+
+.btn-5:hover {}
+
 @import "null.scss";
 @import "header.scss";
 @import "trust.scss";
@@ -182,6 +135,78 @@ body {
 @import "question.scss";
 @import "designing.scss";
 @import "calculator.scss";
+@import "portfolio.scss";
+@import "waterfloor.scss";
+
+%title {
+	font-size: 44px;
+	line-height: 1.2;
+	color: #344757;
+	margin-bottom: 14px;
+
+	@media (max-width: 880px) {
+		font-size: 40px;
+	}
+
+	@media(max-width: 460px) {
+		font-size: 26px;
+	}
+}
+
+// @extend %title ;
+%subtitle {
+	font-size: 24px;
+	line-height: 1.2;
+	color: #59768c;
+
+	@media(max-width: 460px) {
+		font-size: 16px;
+	}
+}
+
+// @extend %subtitle ;
+%titlepad {
+	@media (max-width: 1250px) {
+		padding-left: 0px;
+		max-width: 1008px;
+	}
+}
+
+// @extend %titlealign;
+%titlealign {
+	@media (max-width: 1050px) {
+		text-align: center;
+	}
+
+	@media (max-width: 450px) {
+		text-align: left;
+	}
+}
+
+// @extend %titlepad;
+%container {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+// @extend %container;
+
+// %none {
+// 	display: none;
+// 	opacity: 0;
+// 	z-index: -999;
+// 	visibility: hidden;
+// 	width: 0;
+// 	height: 0;
+// 	position: absolute;
+// 	left: -9999;
+// 	top: -9999;
+// }
+
+
+
+
+
 
 // ==============================================================complete-solution
 .complete-solution {

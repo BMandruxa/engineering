@@ -7,15 +7,17 @@
       padding: 98px 0px 98px 0px;
 
       margin: 0 auto;
+
+      @media(max-width: 880px) {
+         padding: 17px 0px 17px 0px;
+      }
+
+      @media(max-width: 426px) {
+         padding: 17px 0px 315px 0px;
+      }
    }
 
-   @media(max-width: 880px) {
-      padding: 17px 0px 17px 0px;
-   }
 
-   @media(max-width: 426px) {
-      padding: 17px 0px 315px 0px;
-   }
 
    &__container {
       max-width: 1246px;
