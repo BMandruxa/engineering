@@ -67,6 +67,10 @@
    background: #E8F2FA;
    padding-bottom: 64px;
 
+   @media(max-width: 460px) {
+      padding-bottom: 50px;
+   }
+
    &__container {}
 
    &__items {
@@ -89,7 +93,10 @@
    }
 
    &__item:not(:last-child) {
-      margin-bottom: 32px;
+      @media(max-width: 1240px) {
+         margin-bottom: 32px;
+      }
+
    }
 
    &__content {

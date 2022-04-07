@@ -1498,6 +1498,11 @@ body._touch .header__body .header__title._active .menu {
   background: #E8F2FA;
   padding-bottom: 64px;
 }
+@media (max-width: 460px) {
+  .cards {
+    padding-bottom: 50px;
+  }
+}
 .cards__items {
   display: flex;
   justify-content: center;
@@ -1517,8 +1522,10 @@ body._touch .header__body .header__title._active .menu {
     height: 145px;
   }
 }
-.cards__item:not(:last-child) {
-  margin-bottom: 32px;
+@media (max-width: 1240px) {
+  .cards__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 .cards__content {
   display: flex;
@@ -2298,6 +2305,11 @@ body._touch .header__body .header__title._active .menu {
 .stock {
   padding-bottom: 64px;
   background: #E8F2FA;
+}
+@media (max-width: 460px) {
+  .stock {
+    padding-bottom: 50px;
+  }
 }
 @media (max-width: 880px) {
   .stock__container {
@@ -3190,16 +3202,11 @@ body._touch .header__body .header__title._active .menu {
 .portfolio-head {
   background: #E8F2FA;
   padding-top: 232px;
-  padding-bottom: 98px;
+  padding-bottom: 35px;
 }
 @media (max-width: 1000px) {
   .portfolio-head {
     padding-top: 137px;
-  }
-}
-@media (max-width: 430px) {
-  .portfolio-head {
-    padding-bottom: 60px;
   }
 }
 .portfolio-head__title {
@@ -3207,11 +3214,17 @@ body._touch .header__body .header__title._active .menu {
   font-size: 44px;
   line-height: 1.2;
   color: #344757;
+  margin-bottom: 36px;
 }
 @media (max-width: 1000px) {
   .portfolio-head__title {
     padding-left: 0px;
     text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .portfolio-head__title {
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 430px) {
@@ -3391,6 +3404,153 @@ body._touch .header__body .header__title._active .menu {
   .bottom-watercase__text br {
     display: none;
   }
+}
+
+.bread {
+  background: #E8F2FA;
+}
+.bread_question {
+  background: #fff;
+}
+
+.breadcrumb_service {
+  padding-left: 60px;
+  padding-bottom: 42px;
+}
+@media (max-width: 1240px) {
+  .breadcrumb_service {
+    max-width: 592px;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 460px) {
+  .breadcrumb_service {
+    padding-bottom: 30px;
+  }
+}
+.breadcrumb_calculator {
+  padding-top: 60px;
+  margin-left: -35px;
+}
+@media (max-width: 1140px) {
+  .breadcrumb_calculator {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1025px) {
+  .breadcrumb_calculator {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 430px) {
+  .breadcrumb_calculator {
+    padding-top: 25px;
+  }
+}
+.breadcrumb_question {
+  padding-top: 35px;
+  padding-left: 65px;
+}
+@media (max-width: 580px) {
+  .breadcrumb_question {
+    padding-left: 0px;
+  }
+}
+.breadcrumb_designing {
+  padding-left: 60px;
+  padding-bottom: 42px;
+}
+@media (max-width: 1240px) {
+  .breadcrumb_designing {
+    max-width: 592px;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 460px) {
+  .breadcrumb_designing {
+    padding-bottom: 30px;
+  }
+}
+.breadcrumb_portfolio {
+  padding-left: 65px;
+}
+@media (max-width: 670px) {
+  .breadcrumb_portfolio {
+    padding-left: 0px;
+  }
+}
+.breadcrumb_waterfloor {
+  padding-left: 65px;
+}
+@media (max-width: 670px) {
+  .breadcrumb_waterfloor {
+    padding-left: 0px;
+  }
+}
+.breadcrumb__ul {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 460px) {
+  .breadcrumb__ul_designing {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .breadcrumb__ul_designing {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 505px) {
+  .breadcrumb__ul_waterfloor {
+    flex-wrap: wrap;
+  }
+}
+.breadcrumb__li {
+  margin-right: 8px;
+}
+.breadcrumb__li::after {
+  content: ">";
+  margin-left: 8px;
+  color: #59768C;
+}
+.breadcrumb__li a {
+  font-size: 16px;
+  line-height: 1.62;
+  color: #59768C;
+}
+@media (max-width: 460px) {
+  .breadcrumb__li a {
+    font-size: 14px;
+  }
+}
+.breadcrumb__span {
+  font-size: 16px;
+  line-height: 1.62;
+  color: #59768C;
+}
+@media (max-width: 460px) {
+  .breadcrumb__span {
+    font-size: 14px;
+  }
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb li:first-child a {
+  font-size: 16px;
+  line-height: 1.62;
+  text-decoration-line: underline;
+  color: #344757;
+}
+
+.breadcrumb li:first-child a:hover {
+  text-decoration-line: none;
 }
 
 .our-services__title, .complete-solution__title, .trust__title, .staff__title {
