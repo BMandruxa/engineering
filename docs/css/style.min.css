@@ -378,6 +378,7 @@ h6 {
 .menu__body {
   width: 100%;
   background: #59768c;
+  position: relative;
 }
 .menu__content {
   max-width: 1246px;
@@ -3926,6 +3927,103 @@ body._touch .header__body .header__title._active .menu {
 
 .breadcrumb li:first-child a:hover {
   text-decoration-line: none;
+}
+
+.transition-menu {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #59768c;
+  display: none;
+}
+.transition-menu__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transition-menu__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1220px) {
+  .transition-menu__title {
+    font-size: 16px;
+  }
+}
+.transition-menu__title img {
+  margin-left: 20px;
+}
+@media (max-width: 1220px) {
+  .transition-menu__title img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.transition-menu__items {
+  display: flex;
+  align-items: center;
+}
+.transition-menu__items a {
+  width: 206px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.16;
+  color: rgba(52, 71, 87, 0.6);
+  transition: all 0.2s ease 0s;
+  position: relative;
+}
+@media (max-width: 1220px) {
+  .transition-menu__items a {
+    height: 49px;
+    width: 190px;
+    font-size: 16px;
+  }
+}
+.transition-menu__items a::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  width: 1px;
+  height: 35px;
+  background-color: rgba(52, 71, 87, 0.6);
+}
+@media (max-width: 1220px) {
+  .transition-menu__items a::before {
+    right: -1px;
+  }
+}
+.transition-menu__items a:last-child::before {
+  width: 0px;
+  height: 0px;
+}
+.transition-menu__item sup {
+  font-size: 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.transition-menu__items a:hover {
+  background: #344757;
+  color: #fff;
+}
+
+body._pc .header__body .menu__title._open .transition-menu {
+  display: block;
+}
+
+body._touch .header__body .menu__title._open .transition-menu {
+  display: block;
 }
 
 .our-services__title, .complete-solution__title, .trust__title, .staff__title {
