@@ -1,21 +1,35 @@
 "use strict"
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.tabs-triggers__item').forEach((item) =>
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-            const id = e.target.getAttribute('href').replace('#', '');
+    const params = new URLSearchParams(document.location.search);
+    const tab = params.get("tab");
 
-            document.querySelectorAll('.tabs-triggers__item').forEach(
-                (child) => child.classList.remove('tabs-triggers__item--active')
-            );
-            document.querySelectorAll('.tabs-content__item').forEach(
-                (child) => child.classList.remove('tabs-content__item--active')
-            );
+    document.querySelectorAll('.tabs-triggers__item').forEach((item) => {
+            const tabIndex = item.getAttribute('href').replace('#tab-', '')
+            const id = item.getAttribute('href').replace('#', '');
 
-            item.classList.add('tabs-triggers__item--active');
-            document.getElementById(id).classList.add('tabs-content__item--active');
-        })
+            if (tab === tabIndex) {
+                item.classList.add('tabs-triggers__item--active');
+                document.getElementById(id).classList.add('tabs-content__item--active');
+            }
+
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelectorAll('.tabs-triggers__item').forEach(
+                    (child) => child.classList.remove('tabs-triggers__item--active')
+                );
+                document.querySelectorAll('.tabs-content__item').forEach(
+                    (child) => child.classList.remove('tabs-content__item--active')
+                );
+
+                item.classList.add('tabs-triggers__item--active');
+                document.getElementById(id).classList.add('tabs-content__item--active');
+            })
+        }
     );
+    
 
-    document.querySelector('.tabs-triggers__item')?.click();
+    if (!tab) {
+        document.querySelector('.tabs-triggers__item')?.click();
+    }
 })

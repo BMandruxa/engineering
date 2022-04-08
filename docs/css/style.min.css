@@ -419,6 +419,13 @@ body._pc .header__body .header__title:hover .menu {
   transform: translate(0px, 0px);
 }
 
+.menu_active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translate(0px, 0px);
+}
+
 body._touch .header__body .header__title._active .menu {
   opacity: 1;
   visibility: visible;
