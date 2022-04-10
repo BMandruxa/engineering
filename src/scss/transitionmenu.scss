@@ -22,7 +22,7 @@
       align-items: center;
 
       @media(max-width: 1220px) {
-         font-size: 16px;
+         font-size: 14px;
       }
    }
 
@@ -55,7 +55,11 @@
       @media(max-width: 1220px) {
          height: 49px;
          width: 190px;
-         font-size: 16px;
+         font-size: 14px;
+      }
+
+      @media(max-width: 1160px) {
+         width: 160px;
       }
    }
 
@@ -90,6 +94,8 @@
       background: #344757;
       color: #fff;
    }
+
+
 }
 
 //======================================================== появление выпадающего меню на пк и мобильных экранах

@@ -10,12 +10,11 @@
     background: #e8f2fa;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 999.98px) {
     height: 90px;
   }
 
-  &__container {
-  }
+  &__container {}
 
   &__body {
     display: flex;
@@ -38,13 +37,13 @@
       top: -9999;
     }
 
-    &_main .header__title a {
-      color: #344757;
-    }
+    // &_main .header__title a {
+    //   color: #344757;
+    // }
 
-    &_main .header__title a:hover {
-      color: #6995ba;
-    }
+    // &_main .header__title a:hover {
+    //   color: #6995ba;
+    // }
 
     &_main .header__number a {
       color: #344757;
@@ -53,6 +52,14 @@
     &_main .header__number a:hover {
       color: #6995ba;
     }
+  }
+
+  &_main .header__titl {
+    color: #344757;
+  }
+
+  &_main .header__titl:hover {
+    color: #6995ba;
   }
 
   &__icon {
@@ -125,8 +132,7 @@
     color: #ff6200;
   }
 
-  &__menu-list {
-  }
+  &__menu-list {}
 }
 
 //========================================================выпадающее меню
@@ -368,15 +374,13 @@ body._touch .header__body .header__title._active .menu {
     margin-bottom: 20px;
   }
 
-  &__title {
-  }
+  &__title {}
 
   &__title:not(:last-child) {
     margin-right: 140px;
   }
 
-  &__content {
-  }
+  &__content {}
 
   &__top {
     display: flex;
@@ -391,8 +395,7 @@ body._touch .header__body .header__title._active .menu {
       margin-bottom: 59px;
     }
 
-    &_3 {
-    }
+    &_3 {}
   }
 
   &__link {
@@ -401,8 +404,7 @@ body._touch .header__body .header__title._active .menu {
     color: #344757;
   }
 
-  &__bottom {
-  }
+  &__bottom {}
 }
 
 // ========================================================изменение цвета хедера только на главной странице

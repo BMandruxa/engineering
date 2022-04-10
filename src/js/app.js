@@ -6,4 +6,5 @@ import './files/tabs.js'
 import './files/radio.js'
 import './files/case.js'
 import './files/scroll.js'
+import './files/transselect.js'
 

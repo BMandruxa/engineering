@@ -1,0 +1,137 @@
+.transition-mobile {
+   position: fixed;
+   z-index: 40;
+   top: 90px;
+   left: 0px;
+   width: 100%;
+   height: 55px;
+   background: #59768C;
+
+   @media(min-width: 1000px) {
+      display: none;
+   }
+
+   &__container {
+      position: relative;
+   }
+
+   &__body {}
+
+   &__heating {
+      display: flex;
+      align-items: center;
+      padding: 16px 0px;
+   }
+
+   &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+   }
+
+   &__title img {
+      width: 23px;
+      height: 23px;
+      margin-left: 33px;
+   }
+
+   &__items {
+      // position: absolute;
+      // top: 55px;
+      // right: 0px;
+      // width: 172px;
+   }
+
+   &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 55px;
+      background: #344757;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      // color: rgba(52, 71, 87, 0.6);
+   }
+}
+
+.select {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   width: 172px;
+   // position: relative;
+   // width: 100%;
+   // height: 55px;
+}
+
+.select__toggle {
+   display: flex;
+   cursor: pointer;
+   align-items: center;
+   justify-content: center;
+   width: 172px;
+   height: 55px;
+   background: #59768C;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   color: rgba(52, 71, 87, 0.6);
+   transition: all 0.3s ease 0s;
+}
+
+.select__dropdown {
+   // display: none;
+   width: 172px;
+   position: absolute;
+   top: 55px;
+   right: 0px;
+   overflow-y: auto;
+   background: #59768C;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   color: rgba(52, 71, 87, 0.6);
+   transition: all 0.3s ease 0s;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.select__option {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 55px;
+   background: #59768C;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   // color: #FFFFFF;
+   color: rgba(52, 71, 87, 0.6);
+}
+
+.select_show .select__dropdown {
+   display: block;
+   opacity: 1;
+   visibility: visible;
+}
+
+.select_show .select__backdrop {
+   display: block;
+   opacity: 1;
+   visibility: visible;
+}
+
+.select_show .select__toggle {
+   background: #344757;
+   color: #fff;
+}
+
+.select__option_selected {
+   background: #344757;
+   color: #fff;
+}

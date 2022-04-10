@@ -1,11 +1,14 @@
 .montage {
    &__body {
-      @media(max-width: 1025px) {
-         justify-content: flex-start;
-         flex-direction: column;
-         padding-left: 0px;
-         align-items: center;
+      &_question {
+         @media(max-width: 1025px) {
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-left: 0px;
+            align-items: center;
+         }
       }
+
    }
 
    &__title {
