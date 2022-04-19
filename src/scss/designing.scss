@@ -70,7 +70,7 @@
          }
 
          @media(max-width: 460px) {
-            font-size: 14px;
+            font-size: 16px;
          }
       }
    }
@@ -328,7 +328,7 @@
 
    &__image img {
       width: 384px;
-      height: 196px;
+      // height: 196px;
    }
 
    &__designing-price {
@@ -396,6 +396,11 @@
 .content-2 {
 
    &__image {}
+
+   &__image img {
+      width: 384px;
+      height: 180px;
+   }
 
    &__button {}
 }

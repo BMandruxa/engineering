@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220410144141">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220419214147">
 	<title>Портфолио - страница</title>
 </head>
 
@@ -19,7 +19,7 @@
             </a>
          </div>
          <div id="title-1" class="header__title header__title_1">
-            <a href="#">Услуги</a>
+            <a class="header__titl" href="#">Услуги</a>
             <div id="menu" class="header__menu-list menu">
                <div class="menu__body">
                   <div class="menu__content">
@@ -140,12 +140,26 @@
                </div>
             </div>
          </div>
-         <div class="header__title"><a href="./service.html">Клиентам</a></div>
-         <div class="header__title"><a href="./question.html">Акции</a></div>
-         <div class="header__title"><a href="./designing.html">Видеоблог</a></div>
-         <div class="header__title"><a href="./calculator.html">Калькулятор</a></div>
-         <div class="header__title"><a href="./portfolio.html">Портфолио</a></div>
-         <div class="header__title"><a href="#">Контакты</a></div>
+         <div id="title-2" class="header__title"><a class="header__titl" href="#">Клиентам</a>
+            <div id="menu" class="header__menu-list menu">
+               <div class="menu__body">
+                  <div class="menu__content">
+                     <a href="#" class="menu__title menu__title_clients-1">Клиентам</a>
+                     <a href="./portfolio.html" class="menu__title menu__title_clients-2">Портфолио</a>
+                     <a href="#" class="menu__title menu__title_clients-3">О нас</a>
+                     <a href="#" class="menu__title menu__title_clients-4">Акции</a>
+                     <a href="#" class="menu__title menu__title_clients-5">Отзывы</a>
+                     <a href="#" class="menu__title menu__title_clients-6">Готовые решения</a>
+                     <a href="#" class="menu__title menu__title_clients-7">Материнский капитал</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header__title"><a class="header__titl" href="./question.html">Акции</a></div>
+         <div class="header__title"><a class="header__titl" href="./designing.html">Видеоблог</a></div>
+         <div class="header__title"><a class="header__titl" href="./calculator.html">Калькулятор</a></div>
+         <div class="header__title"><a class="header__titl" href="./portfolio.html">Портфолио</a></div>
+         <div class="header__title"><a class="header__titl" href="#">Контакты</a></div>
          <div class="header__number"><a href="tel:+78312601076"> <span class="header__span">+7 (831)</span> 260-10-76</a></div>
       </div>
    </div>
@@ -175,14 +189,14 @@
                <div class="mobile-menu__top">
                   <div class="mobile-menu__links mobile-menu__links_1">
                      <a class="mobile-menu__link" href="./service.html">Отопление</a>
-                     <a class="mobile-menu__link" href="#">Котельная</a>
-                     <a class="mobile-menu__link" href="#">Тёплый пол</a>
-                     <a class="mobile-menu__link" href="#">Водоснабжение</a>
-                     <a class="mobile-menu__link" href="#">Канализация</a>
-                     <a class="mobile-menu__link" href="#">Все под ключ</a>
-                     <a class="mobile-menu__link" href="#">Электрика</a>
-                     <a class="mobile-menu__link" href="#">Проектирование</a>
-                     <a class="mobile-menu__link" href="#">Цены на монтаж</a>
+                     <a class="mobile-menu__link" href="./service_2.html">Котельная</a>
+                     <a class="mobile-menu__link" href="./service_3.html">Тёплый пол</a>
+                     <a class="mobile-menu__link" href="./service_4.html">Водоснабжение</a>
+                     <a class="mobile-menu__link" href="./service_5.html">Канализация</a>
+                     <a class="mobile-menu__link" href="./service_6.html">Все под ключ</a>
+                     <a class="mobile-menu__link" href="./service_7.html">Электрика</a>
+                     <a class="mobile-menu__link" href="./designing.html">Проектирование</a>
+                     <a class="mobile-menu__link" href="./service_9.html">Цены на монтаж</a>
                   </div>
                   <div class="mobile-menu__links">
                      <a class="mobile-menu__link" href="./designing.html">Клиентам</a>
@@ -264,6 +278,56 @@
                </div>
             </div>
          </div>
+         <div class="project">
+   <div class="project__cont">
+      <div class="project__container">
+         <div class="project__image"><picture><source srcset="img/blocks/project/menchik03.webp" type="image/webp"><img class="project__img-1" src="img/blocks/project/menchik03.png" alt="Проекта ещё нет?"></picture>
+            <img class="project__img-2" src="img/blocks/project/mensvg02.svg" alt="Проекта ещё нет?">
+         </div>
+         <div class="project__body">
+            <h2 class="project__title">Проекта ещё нет?</h2>
+            <h3 class="project__subtitle">Вызовите специалиста на объект<br class="project__br"> для замеров!</h3>
+            <div class="project__points">
+               <div class="project__point"><img src="img/index/decisions/check.svg" alt="">Это бесплатно</div>
+               <div class="project__point"><img src="img/index/decisions/check.svg" alt="">В удобное время</div>
+               <div class="project__point"><img src="img/index/decisions/check.svg" alt="">Индивидуальный подход</div>
+            </div>
+            <form class="project__form">
+               <input type="tel" name="tel" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" autocomplete="on" placeholder="+7" required>
+               <button class="project__button btn-3">Вызвать специалиста</button>
+            </form>
+            <div class="project__foot">
+               Вы получите коммерческое предложение<br class="project__br"> на основе готового плана, проекта дома!
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+         <div class="trust">
+   <div class="trust__container _container">
+      <h2 class="trust__title">Почему доверяют Строй-Инжиниринг</h2>
+      <div class="trust__subtitle">преимущества за которые выбирают нас</div>
+      <div class="trust__items">
+         <div class="trust__item">
+            <h3 class="trust__head">Предоставляем услуги<br> «под ключ»</h3>
+            <div class="trust__text">У нас вы можете заказать<br> проектирование, монтаж <br> инженерных коммуникаций с <br>последующим сервисным<br> обслуживанием.</div>
+         </div>
+         <div class="trust__item">
+            <h3 class="trust__head">За раз выполняем большой<br> объем работ</h3>
+            <div class="trust__text">Еще на этапе планирования<br> обсуждаем все детали с <br> Заказчиком. Это позволяет<br> выполнять монтаж в частном<br> доме строго в оговоренные<br> сроки.</div>
+         </div>
+         <div class="trust__item">
+            <h3 class="trust__head">Делаем минимальную<br> наценку на оборудование</h3>
+            <div class="trust__text">Работаем с прямыми<br> поставщиками высококлассного<br> современного оборудования, <br> инженерных систем импортного<br> производства.<br>
+               Практикуем гибкий подход в<br> ценообразовании - предлагаем<br> три готовых ценовых решения.</div>
+         </div>
+         <div class="trust__item">
+            <h3 class="trust__head">Обеспечиваем качественное<br> сервисное обслуживание</h3>
+            <div class="trust__text">Предоставляем гарантию на все<br> виды выполненных работ.<br> Осуществляем проверку<br> качества работ на всех этапах,<br> гарантируем сервисное<br> обслуживание независимо от<br> срока эксплуатации инженерной<br> системы.</div>
+         </div>
+      </div>
+   </div>
+</div>
       </main>
       <footer class="footer">
    <div class="footer__container _container">
@@ -283,14 +347,14 @@
                в Нижнем Новгороде и<br> Нижегородской области.</div>
             <div class="footer__links footer__links_1">
                <div class="footer__link"><a href="./service.html">Отопление</a></div>
-               <div class="footer__link"><a href="#">Котельная</a></div>
-               <div class="footer__link"><a href="#">Тёплый пол</a></div>
-               <div class="footer__link"><a href="#">Водоснабжение</a></div>
-               <div class="footer__link"><a href="#">Канализация</a></div>
-               <div class="footer__link"><a href="#">Все под ключ</a></div>
-               <div class="footer__link"><a href="#">Электрика</a></div>
+               <div class="footer__link"><a href="./service_2.html">Котельная</a></div>
+               <div class="footer__link"><a href="./service_3.html">Тёплый пол</a></div>
+               <div class="footer__link"><a href="./service_4.html">Водоснабжение</a></div>
+               <div class="footer__link"><a href="./service_5.html">Канализация</a></div>
+               <div class="footer__link"><a href="./service_6.html">Все под ключ</a></div>
+               <div class="footer__link"><a href="./service_7.html">Электрика</a></div>
                <div class="footer__link"><a href="./designing.html">Проектирование</a></div>
-               <div class="footer__link"><a href="#">Цены на монтаж</a></div>
+               <div class="footer__link"><a href="./service_9.html">Цены на монтаж</a></div>
             </div>
             <div class="footer__links footer__links_2">
                <div class="footer__link"><a href="#">Клиентам</a></div>
@@ -332,14 +396,14 @@
          <div class="mobile-footer__bottom">
             <div class="mobile-footer__links">
                <div class="mobile-footer__link"><a href="./service.html">Отопление</a></div>
-               <div class="mobile-footer__link"><a href="#">Котельная</a></div>
-               <div class="mobile-footer__link"><a href="#">Тёплый пол</a></div>
-               <div class="mobile-footer__link"><a href="#">Водоснабжение</a></div>
-               <div class="mobile-footer__link"><a href="#">Канализация</a></div>
-               <div class="mobile-footer__link"><a href="#">Все под ключ</a></div>
-               <div class="mobile-footer__link"><a href="#">Электрика</a></div>
+               <div class="mobile-footer__link"><a href="./service_2.html">Котельная</a></div>
+               <div class="mobile-footer__link"><a href="./service_3.html">Тёплый пол</a></div>
+               <div class="mobile-footer__link"><a href="./service_4.html">Водоснабжение</a></div>
+               <div class="mobile-footer__link"><a href="./service_5.html">Канализация</a></div>
+               <div class="mobile-footer__link"><a href="./service_6.html">Все под ключ</a></div>
+               <div class="mobile-footer__link"><a href="./service_7.html">Электрика</a></div>
                <div class="mobile-footer__link"><a href="./designing.html">Проектирование</a></div>
-               <div class="mobile-footer__link"><a href="#">Цены на монтаж</a></div>
+               <div class="mobile-footer__link"><a href="./service_9.html">Цены на монтаж</a></div>
                <div class="mobile-footer__link"><a href="./calculator.html">Калькулятор</a></div>
                <div class="mobile-footer__link"><a href="#">Строительство в кредит</a></div>
                <div class="mobile-footer__link"><a href="#">Сертификаты</a></div>
@@ -362,8 +426,8 @@
    </div>
 </footer>
    </div>
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20220410144141"></script>
-   <script src="js/app.min.js?_v=20220410144141"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20220419214147"></script>
+   <script src="js/app.min.js?_v=20220419214147"></script>
 </body>
 
 </html>

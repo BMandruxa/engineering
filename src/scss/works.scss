@@ -77,6 +77,8 @@
    &__image img {
       display: block;
       box-sizing: border-box;
+      width: 384px;
+      height: 309px;
 
       @media(max-width: 400px) {
          width: 100%;

@@ -1,27 +1,3 @@
-// const choose = document.querySelector('.choose');
-// const select = document.querySelector('.choose__sublist');
-// const vector = document.querySelector('.choose__vector');
-// if (choose) {
-//    choose.addEventListener("click", () => {
-//       choose.classList.toggle('_click');
-//       vector.classList.toggle('_flip');
-//       select.classList.toggle('_active');
-//    });
-// }
-
-
-// const chooses = document.querySelectorAll(".choose");
-// const selects = document.querySelectorAll(".choose__sublist");
-// const vectors = document.querySelectorAll(".choose__vector");
-// if (chooses) {
-//   chooses.forEach((choose) =>
-//     choose.addEventListener("click", () => {
-//       choose.classList.toggle("_click");
-//       vectors.forEach((vector) => vector.classList.toggle("_flip"));
-//       selects.forEach((select) => select.classList.toggle("_active"));
-//     })
-//   );
-// }
 "use strict"
 const chooseOne = document.querySelectorAll("#choose-1");
 const selectOne = document.querySelectorAll("#sublist-1");

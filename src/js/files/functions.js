@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isMobile.any()) {
         document.body.classList.add('_touch');
         let titleOne = document.querySelector('#title-1');
+        let titleTwo = document.querySelector('#title-2');
         const serviceOne = document.querySelector('.serviceOne');
         const serviceTwo = document.querySelector('.serviceTwo');
         const serviceThree = document.querySelector('.serviceThree');
@@ -43,6 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (titleOne) {
             titleOne.addEventListener("click", function (e) {
                 titleOne.classList.add('_active');
+            });
+        }
+        if (titleTwo) {
+            titleTwo.addEventListener("click", function (e) {
+                titleTwo.classList.add('_active');
             });
         }
         if (serviceOne) {

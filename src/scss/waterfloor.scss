@@ -48,6 +48,7 @@
       @media (max-width: 835px) {
          width: 350px;
          margin: 0 auto;
+
       }
 
       @media (max-width: 750px) {
@@ -66,6 +67,8 @@
    }
 
    &__img {
+      max-height: 309px;
+
       @media (max-width: 835px) {
          width: 100%;
       }

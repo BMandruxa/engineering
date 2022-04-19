@@ -29,10 +29,13 @@
 
    &__item {
       display: flex;
-      max-width: 696px;
+      // max-width: 696px;
+      max-width: 1216px;
       height: 178px;
       padding: 25px 0px 26px 20px;
       background: #fff;
+      border-radius: 7px;
+      transition: all 0.3s ease 0s;
 
       @media(max-width: 710px) {
          height: auto;
@@ -44,9 +47,10 @@
       }
 
       &_1 {
-         max-width: 1216px;
+         // max-width: 1216px;
       }
    }
+
 
    &__item:not(:last-child) {
       margin-bottom: 40px;
@@ -264,6 +268,13 @@
    }
 }
 
+.calculator__item._active {
+   @media(min-width: 800px) {
+      max-width: 696px;
+      background: #C6D8E5;
+   }
+}
+
 // ============================================================
 .montage {
 
@@ -327,6 +338,10 @@
       @media(max-width: 500px) {
          text-align: left;
       }
+
+      @media(max-width: 430px) {
+         font-size: 16px;
+      }
    }
 
    &__calculator-image {
@@ -336,6 +351,9 @@
    }
 
    &__calculator-img {
+      width: 416px;
+      height: 336px;
+
       @media(max-width: 500px) {
          width: 343px;
       }
@@ -512,6 +530,10 @@
       @media(max-width: 1260px) {
          display: none;
       }
+   }
+
+   &__men img {
+      height: 676px;
    }
 
    &__body {

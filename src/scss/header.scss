@@ -25,7 +25,7 @@
       justify-content: space-between;
     }
 
-    @media (max-width: 999.98px) {
+    @media (max-width: 1024.98px) {
       display: none;
       opacity: 0;
       z-index: -999;
@@ -104,14 +104,14 @@
     }
   }
 
-  &__title a {
+  &__titl {
     font-size: 16px;
     line-height: 1.62;
     color: #ffffff;
     transition: all 0.3s ease 0s;
   }
 
-  &__title a:hover {
+  &__titl:hover {
     color: #6995ba;
   }
 
@@ -167,6 +167,7 @@
   }
 
   &__title {
+    display: block;
     padding: 25px 26px 27px 26px;
     font-size: 16px;
     line-height: 1.2;
@@ -179,6 +180,76 @@
       font-size: 14px;
       line-height: 1.2;
       padding: 15px 15px 15px 15px;
+    }
+
+    &_clients-1 {
+      padding: 22px 25px 27px 25px;
+
+      @media(max-width: 1220px) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px 20px 15px 20px;
+      }
+    }
+
+    &_clients-2 {
+      padding: 22px 30px 27px 30px;
+
+      @media(max-width: 1220px) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px 20px 15px 20px;
+      }
+    }
+
+    &_clients-3 {
+      padding: 22px 40px 27px 40px;
+
+      @media(max-width: 1220px) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px 20px 15px 20px;
+      }
+    }
+
+    &_clients-4 {
+      padding: 22px 60px 27px 60px;
+
+      @media(max-width: 1220px) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px 20px 15px 20px;
+      }
+    }
+
+    &_clients-5 {
+      padding: 22px 53px 27px 53px;
+
+      @media(max-width: 1220px) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px 20px 15px 20px;
+      }
+    }
+
+    &_clients-6 {
+      padding: 22px 50px 27px 50px;
+
+      @media(max-width: 1220px) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px 20px 15px 20px;
+      }
+    }
+
+    &_clients-7 {
+      padding: 22px 35px 27px 35px;
+
+      @media(max-width: 1220px) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px 20px 15px 20px;
+      }
     }
   }
 
@@ -195,7 +266,7 @@ body._pc .header__body .header__title:hover .menu {
   transform: translate(0px, 0px);
 }
 
-.menu_active {
+.menu._active {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -215,9 +286,10 @@ body._touch .header__body .header__title._active .menu {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 32px 34px 23px 16px;
+  // padding: 32px 34px 23px 16px;
+  padding: 0 34px 0 16px;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     display: none;
     opacity: 0;
     z-index: -999;
@@ -359,19 +431,22 @@ body._touch .header__body .header__title._active .menu {
 
   &__body {
     height: 670px;
-    width: 375px;
+    // width: 375px;
+    width: 100%;
     padding: 38px 17px 0px 17px;
     background: #ffffff;
   }
 
   &__head {
     display: flex;
+    // justify-content: flex-end;
     font-size: 14px;
     line-height: 1.86;
     color: #344757;
     padding-bottom: 20px;
     border-bottom: 1px solid #59768c;
     margin-bottom: 20px;
+    // padding-right: 78px;
   }
 
   &__title {}
@@ -384,6 +459,7 @@ body._touch .header__body .header__title._active .menu {
 
   &__top {
     display: flex;
+    // justify-content: flex-end;
   }
 
   &__links {
@@ -404,7 +480,11 @@ body._touch .header__body .header__title._active .menu {
     color: #344757;
   }
 
-  &__bottom {}
+  &__bottom {
+    // display: flex;
+    // justify-content: flex-end;
+    // padding-right: 169px;
+  }
 }
 
 // ========================================================изменение цвета хедера только на главной странице

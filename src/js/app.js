@@ -7,4 +7,5 @@ import './files/radio.js'
 import './files/case.js'
 import './files/scroll.js'
 import './files/transselect.js'
+import './files/calculator.js'
 
