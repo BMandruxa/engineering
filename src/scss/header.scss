@@ -102,6 +102,18 @@
         padding-left: 10px;
       }
     }
+
+    &_2 {
+      margin-right: 0px;
+      padding-right: 41px;
+
+
+      @media (max-width: 1230px) {
+        margin-right: 0px;
+        padding-right: 20px;
+
+      }
+    }
   }
 
   &__titl {

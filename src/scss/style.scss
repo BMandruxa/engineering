@@ -127,6 +127,25 @@ body {
 
 .btn-5:hover {}
 
+.btn-6 {
+	width: 207px;
+	height: 65px;
+	background: #FF6200;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	transition: all 0.3s ease 0s;
+}
+
+.btn-6:hover {
+	background: #D75200;
+}
+
 @import "null.scss";
 @import "header.scss";
 @import "trust.scss";
@@ -145,6 +164,9 @@ body {
 @import "breadcrumb.scss";
 @import "transitionmenu.scss";
 @import "transitionmobile.scss";
+@import "contacts.scss";
+@import "mothers.scss";
+@import "stock.scss";
 
 %title {
 	font-size: 44px;

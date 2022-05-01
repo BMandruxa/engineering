@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Портфолио - страница"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html',{})
+      <main>
+         <div class="portfolio-head">
+            <div class="portfolio-head__container _container">
+               <div class="portfolio-head__title">Контакты “Строй-Инжиниринг”</div>
+               <nav aria-label="Breadcrumb" class="breadcrumb breadcrumb_waterfloor">
+                  <ul class="breadcrumb__ul breadcrumb__ul_waterfloor">
+                     <li class="breadcrumb__li"><a href="./index.html">Главная</a></li>
+                     <li class="breadcrumb__li"><span class="breadcrumb__span" aria-current="page">Контакты </span></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+
+         <div class="contacts">
+            <div class="contacts__container _container">
+               <div class="contacts__body">
+                  <div class="contacts__top top-contacts">
+                     <div class="top-contacts__number">
+                        <div class="top-contacts__title contacts-title">Многоканальный номер</div>
+                        <div class="top-contacts__subtitle contacts-subtitle">+7 (831) 260-10-70</div>
+                     </div>
+                     <div class="top-contacts__email">
+                        <div class="top-contacts__title contacts-title">Почта для расчётов</div>
+                        <div class="top-contacts__subtitle contacts-subtitle">manager@stroylider-nn.ru</div>
+                     </div>
+                     <div class="top-contacts__adress">
+                        <div class="top-contacts__title contacts-title">Адрес</div>
+                        <div class="top-contacts__subtitle contacts-subtitle">Нижний Новгород,<br>Окский съезд, д. 4, оф. 205</div>
+                     </div>
+                  </div>
+                  <div class="contacts__bottom bottom-contacts">
+                     <div class="bottom-contacts__title contacts-title">График работы</div>
+                     <div class="bottom-contacts__subtitle contacts-subtitle">Понедельник - Пятница<br class="contacts__br-2"> с 9:00 до 20:00<br>
+                        Суббота<br class="contacts__br-2"> (строго по предварительной записи)<br class="contacts__br-1"> с 9:00 до 15:00<br>
+                        Воскресенье - выходной</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         @@include('html/project.html',{})
+         @@include('html/trust.html',{})
+      </main>
+      @@include('html/footer.html',{})
+   </div>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

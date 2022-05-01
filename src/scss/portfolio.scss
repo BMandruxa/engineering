@@ -34,6 +34,15 @@
          text-align: left;
          font-size: 24px;
       }
+
+      @media(max-width: 380px) {
+         font-size: 22px;
+      }
+   }
+
+   &__title span {
+      color: #FF6200;
+
    }
 }
 

@@ -1,0 +1,142 @@
+.contacts {
+
+   &__container {}
+
+   &__body {
+      padding: 115px 0px 200px 104px;
+
+      @media(max-width: 1050px) {
+         padding: 75px 0px 100px 104px;
+      }
+
+      @media(max-width: 975px) {
+         padding: 75px 0px 100px 65px;
+      }
+
+      @media(max-width: 685px) {
+         padding: 75px 0px 100px 0px;
+      }
+
+      @media(max-width: 460px) {
+         padding: 50px 0px 60px 0px;
+      }
+   }
+
+   &__top {
+      margin-bottom: 41px;
+   }
+
+   &__bottom {}
+
+   &__br-1 {
+      @media(min-width: 765px) {
+         display: none;
+      }
+   }
+
+   &__br-2 {
+      @media(min-width: 525px) {
+         display: none;
+      }
+   }
+}
+
+.top-contacts {
+   display: flex;
+   align-items: flex-start;
+
+   @media(max-width: 933px) {
+      flex-wrap: wrap;
+   }
+
+   @media(max-width: 525px) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   &__number {
+      margin-right: 100px;
+
+      @media(max-width: 1160px) {
+         margin-right: 50px;
+      }
+
+      @media(max-width: 1060px) {
+         margin-right: 25px;
+      }
+
+      @media(max-width: 933px) {
+         margin-bottom: 41px;
+      }
+
+      @media(max-width: 525px) {
+         margin-right: 0px;
+      }
+   }
+
+   &__email {
+      margin-right: 150px;
+
+      @media(max-width: 1160px) {
+         margin-right: 100px;
+      }
+
+      @media(max-width: 1060px) {
+         margin-right: 50px;
+      }
+
+      @media(max-width: 600px) {
+         margin-right: 0px;
+      }
+
+      @media(max-width: 525px) {
+         margin-bottom: 41px;
+      }
+   }
+
+   &__adress {}
+
+   &__title {}
+
+   &__subtitle {}
+}
+
+.contacts-title {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.2;
+   color: #59768C;
+   margin-bottom: 15px;
+
+   // @media(max-width: 430px) {
+   //    padding: 50px 0px 60px 0px;
+   // }
+}
+
+.contacts-subtitle {
+   font-weight: 300;
+   font-size: 24px;
+   line-height: 1.2;
+   color: #344757;
+
+   @media(max-width: 430px) {
+      font-size: 20px;
+   }
+
+   @media(max-width: 360px) {
+      font-size: 18px;
+   }
+}
+
+.bottom-contacts {
+   @media(max-width: 525px) {
+      text-align: center;
+   }
+
+   &__title {}
+
+   &__subtitle {}
+}

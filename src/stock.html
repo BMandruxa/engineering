@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Акции"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html',{})
+      <main>
+         <div class="portfolio-head">
+            <div class="portfolio-head__container _container">
+               <div class="portfolio-head__title"><span>АКЦИИ</span> “Строй-Инжиниринг”</div>
+               <nav aria-label="Breadcrumb" class="breadcrumb breadcrumb_waterfloor">
+                  <ul class="breadcrumb__ul breadcrumb__ul_waterfloor">
+                     <li class="breadcrumb__li"><a href="./index.html">Главная</a></li>
+                     <li class="breadcrumb__li"><span class="breadcrumb__span" aria-current="page">Акции</span></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="stocks">
+            <div class="stocks__container _container">
+               <div class="stocks__items">
+                  <div class="stocks__item">
+                     <div class="stocks__image"><img src="@img/stock/01.png" alt="10% СКИДКА НА ОТОПЛЕНИЕ" class="stocks__img"></div>
+                     <div class="stocks__content">
+                        <div class="stocks__title"><span>10% СКИДКА</span><br>НА ОТОПЛЕНИЕ</div>
+                        <div class="stocks__subtitle">Закажите отопление сейчас<br class="stocks__br-1"> и получите скидку 10%,<br class="stocks__br-1"> за счёт прямых поставок<br class="stocks__br-1"> от производителя!</div>
+                        <button class="stocks__button btn-6">Получить скидку</button>
+                     </div>
+                  </div>
+                  <div class="stocks__item">
+                     <div class="stocks__image"><img src="@img/stock/02.png" alt="5 ЛЕТ ГАРАНТИИ НА ВСЕ РАБОТЫ" class="stocks__img"></div>
+                     <div class="stocks__content">
+                        <div class="stocks__title"><span>5 ЛЕТ ГАРАНТИИ</span><br>НА ВСЕ РАБОТЫ</div>
+                        <div class="stocks__subtitle">Получите гарантию 5 лет<br class="stocks__br-1"> и первый год сервисного обслуживания в подарок!</div>
+                        <button class="stocks__button btn-6">Получить скидку</button>
+                     </div>
+                  </div>
+                  <div class="stocks__item">
+                     <div class="stocks__image"><img src="@img/stock/03.png" alt="1 ГОД СЕРВИСА В ПОДАРОК" class="stocks__img"></div>
+                     <div class="stocks__content">
+                        <div class="stocks__title">1 ГОД СЕРВИСА<br><span>В ПОДАРОК</span></div>
+                        <div class="stocks__subtitle">Получите гарантию 5 лет<br class="stocks__br-1"> и первый год сервисного обслуживания в подарок!</div>
+                        <button class="stocks__button btn-6">Получить скидку</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         @@include('html/trust.html',{})
+      </main>
+      @@include('html/footer.html',{})
+   </div>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>
